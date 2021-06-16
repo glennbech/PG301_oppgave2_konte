@@ -10,7 +10,7 @@ resource "google_compute_instance" "default" {
       image = "debian-cloud/debian-9"
     }
   }
-
+  allow_stopping_for_update = true
 
   network_interface {
     network = "default"
